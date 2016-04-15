@@ -239,7 +239,7 @@ function showMarketDetails( item ) {
 function onSearchButtonClick( event ) {
     var criteria = {};
     
-    var fields = ["state", "searchPhrase", 
+    var fields = ["county", "searchPhrase", 
                   "credit", "wiccash", "sfmnp", "snap",
                   "bakedGoods", "cheese", "crafts",
                   "flowers", "seafood", "fruit", "herbs", "vegetables", "honey", "jams", "maple",
@@ -288,9 +288,9 @@ function filterMarketsBySearchCriteria( criteria ) {
 }
 
 function marketRowMatchesCriteria( row, criteria ) {
-    
+
     //state
-    if ( row[6] != criteria.state ) { return false; }
+    if ( row[5] != criteria.county && criteria.county !="Tous" ) { return false;}
                   
     if ( criteria.credit == true )      {    if ( row[11] != "Y" ) return false;    };
     if ( criteria.wic == true )         {    if ( row[12] != "Y" ) return false;    };
@@ -332,6 +332,7 @@ function marketRowMatchesCriteria( row, criteria ) {
             if ( regexp.test( row[10] ) ) { iterationResult = true; };
             result = iterationResult && result;
         }
+
         return result;
     }
     
@@ -339,7 +340,7 @@ function marketRowMatchesCriteria( row, criteria ) {
 }
 
 function criteriaToString( criteria ) { 
-    var result = criteria.state;
+    var result = criteria.county;
     
     if (criteria.searchPhrase) {
         result += ", '" + criteria.searchPhrase + "'";
@@ -363,7 +364,7 @@ function arrayToMarketObject( arr ) {
     result.paymentDetail = result.credit || result.wic || result.wicash || result.sfmnp || result.snap;
     result.productDetail = result.bakedgoods || result.cheese || result.crafts || result.flowers || result.seafood || result.fruit || result.herbs || result.vegetables || result.honey || result.jams || result.maple || result.meat || result.nuts || result.plants || result.prepared || result.soap;
     
-    return result;
+   return result;
 }
 
 function openExternalURL( url ) {

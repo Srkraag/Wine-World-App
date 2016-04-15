@@ -17,7 +17,7 @@
         {{#street}}
         {{street}},<br/>
         {{/street}}
-        {{city}}, {{state}}, {{zip}}<br/><br/>
+        {{city}}, {{zip}}, {{state}}<br/><br/>
         <!-- <a class="button">Search The Web For This Address</a> -->
         
         {{#county}}
@@ -41,13 +41,13 @@
     </div>
     {{#paymentDetail}}
     <div class="paragraph">
-        <strong>Payment Options: </strong><br/>
+        <strong>Visites & dégustation: </strong><br/>
         
         {{#credit}}
-        <div id="credit_cards" class="amenities">Credit Cards Accepted</div>
+        <div id="credit_cards" class="amenities">Visite possible</div>
         {{/credit}}
         {{#wic}}
-        <div id="wic_accepted" class="amenities">WIC Accepted</div>
+        <div id="wic_accepted" class="amenities">Dégustation possible</div>
         {{/wic}}
         {{#wiccash}}
         <div id="wic_accepted" class="amenities">WIC Cash Accepted</div>
@@ -65,57 +65,57 @@
     {{#productDetail}}
     <div class="paragraph">
         
-        <strong>Available Goods: </strong><br/>       
+        <strong>Cépages cultivés :</strong><br/>       
         {{#bakedgoods}}
-        <div id="bakedgoods" class="amenities">Baked Goods</div>
+        <div id="bakedgoods" class="amenities">Chardonnay</div>
         {{/bakedgoods}} 
         {{#cheese}}
-        <div id="cheese" class="amenities">Cheese</div>
+        <div id="cheese" class="amenities">Chasselas / Fendant</div>
         {{/cheese}} 
         {{#crafts}}
-        <div id="arts" class="amenities">Arts &amp; Crafts</div>
+        <div id="arts" class="amenities">Humagne blanche</div>
         {{/crafts}} 
         {{#flowers}}
-        <div id="flowers" class="amenities">Flowers</div>
+        <div id="flowers" class="amenities">Petite Arvine</div>
         {{/flowers}} 
         {{#seafood}}
-        <div id="seafood" class="amenities">Seafood</div>
+        <div id="seafood" class="amenities">Pinot blanc</div>
         {{/seafood}} 
         {{#fruit}}
-        <div id="fruit" class="amenities">Fruit</div>
+        <div id="fruit" class="amenities">Riesling</div>
         {{/fruit}} 
         {{#herbs}}
-        <div id="herbs" class="amenities">Herbs</div>
+        <div id="herbs" class="amenities">Sylvaner / Johanisberg</div>
         {{/herbs}} 
         {{#vegetables}}
-        <div id="vegetables" class="amenities">Vegetables</div>
+        <div id="vegetables" class="amenities">Cornalin</div>
         {{/vegetables}} 
         {{#honey}}
-        <div id="honey" class="amenities">Honey</div>
+        <div id="honey" class="amenities">Gamaret</div>
         {{/honey}} 
         {{#jams}}
-        <div id="jams" class="amenities">Jams</div>
+        <div id="jams" class="amenities">Gamay</div>
         {{/jams}} 
         {{#maple}}
-        <div id="maple" class="amenities">Maple</div>
+        <div id="maple" class="amenities">Garanoir</div>
         {{/maple}} 
         {{#nuts}}
-        <div id="nuts" class="amenities">Nuts</div>
+        <div id="nuts" class="amenities">Merlot</div>
         {{/nuts}}  
         {{#meat}}
-        <div id="meat" class="amenities">Meats</div>
+        <div id="meat" class="amenities">Pinot noir</div>
         {{/meat}}  
         {{#plants}}
-        <div id="plants" class="amenities">Plants</div>
+        <div id="plants" class="amenities">Syrah</div>
         {{/plants}}  
-        {{#prepared}}
-        <div id="prepared" class="amenities">Prepared Foods</div>
-        {{/prepared}} 
         {{#soap}}
-        <div id="soap" class="amenities">Soap</div>
+        <div id="soap" class="amenities">Assemblages</div>
         {{/soap}} 
+        {{#prepared}}
+        <div id="prepared" class="amenities">Autres produits</div>
+        {{/prepared}} 
         
-        <div class="subtext">(icons may not reflect actual products available)</div>
+        <div class="subtext">Les produits disponibles sont à la discrétion du vigneron</div>
     </div>
     {{/productDetail}}    
 </div>

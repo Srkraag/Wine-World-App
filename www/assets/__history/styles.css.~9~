@@ -343,22 +343,22 @@ body {
 
 #snap {
     background-image:url('graphics/snap.png');
-    background-position: 15px center;
+    background-position: 20px center;
 }
 
 #bakedgoods {
     background-image:url('graphics/ico-wine-glasses-white.png');
-    background-position: 15px center;
+    background-position: 10px center;
 }
 
 #cheese {
     background-image:url('graphics/ico-wine-glasses-white.png');
-    background-position: 15px center;
+    background-position: 7px center;
 }
 
 #arts {
     background-image:url('graphics/ico-wine-glasses-white.png');
-    background-position: 15px center;
+    background-position: 12px center;
 }
 
 #flowers {
@@ -368,7 +368,7 @@ body {
 
 #seafood {
     background-image:url('graphics/ico-wine-glasses-white.png');
-    background-position: 15px center;
+    background-position: 7px center;
 }
 
 #fruit {
@@ -383,22 +383,22 @@ body {
 
 #vegetables {
     background-image:url('graphics/ico-wine-glasse.png');
-    background-position: 15px center;
+    background-position: 16px center;
 }
 
 #honey {
     background-image:url('graphics/ico-wine-glasse.png');
-    background-position: 15px center;
+    background-position: 17px center;
 }
 
 #jams {
     background-image:url('graphics/ico-wine-glasse.png');
-    background-position: 15px center;
+    background-position: 17px center;
 }
 
 #maple {
     background-image:url('graphics/ico-wine-glasse.png');
-    background-position: 15px center;
+    background-position: 17px center;
 }
 
 #nuts {
@@ -408,12 +408,12 @@ body {
 
 #meat {
     background-image:url('graphics/ico-wine-glasse.png');
-    background-position: 15px center;
+    background-position: 10px center;
 }
 
 #plants {
     background-image:url('graphics/ico-wine-glasse.png');
-    background-position: 15px center;
+    background-position: 18px center;
 }
 
 #prepared {
@@ -423,7 +423,7 @@ body {
 
 #soap {
     background-image:url('graphics/ico-wine-glasse.png');
-    background-position: 15px center;
+    background-position: 10px center;
 }
 
 

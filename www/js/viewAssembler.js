@@ -124,20 +124,21 @@ ViewAssembler.prototype.marketDetailsView = function( market ) {
 
 ViewAssembler.prototype.searchView = function () {
     var el = $( templates.searchViewTemplate );
-    var $state = el.find( "#search_state" );
+    var $county = el.find( "#search_county" );
     
-    var states = ["Alabama","Alaska","Arizona","Arkansas","California","Colorado","Connecticut","Delaware","District of Columbia","Florida","Georgia","Hawaii","Idaho","Illinois","Indiana","Iowa","Kansas","Kentucky","Louisiana","Maine","Maryland","Massachusetts","Michigan","Minnesota","Mississippi","Missouri","Montana","Nebraska","Nevada","New Hampshire","New Jersey","New Mexico","New York","North Carolina","North Dakota","Ohio","Oklahoma","Oregon","Pennsylvania","Puerto Rico","Rhode Island","South Carolina","South Dakota","Tennessee","Texas","Utah","Vermont","Virgin Islands","Virginia","Washington","West Virginia","Wisconsin","Wyoming"];
+    var states = ["Tous", "Appenzell","Argovie","Berne","Bâle Campagne","Bâle Ville","Fribourg","Genève","Glaris","Grisons","Jura","Lucerne","Neuchâtel","Nidwald","Obwald","Saint-Gall","Schaffhouse","Schwytz","Soleure","Tesssin","Thurgovie","Uri","Valais","Vaud","Zoug","Zurich"];
     for ( var i in states ) {
-        $state.append($("<option></option>").text(states[i])); 
+        $county.append($("<option></option>").text(states[i])); 
     }
     
     el.find( "#searchButton" ).on( this.CLICK_EVENT, onSearchButtonClick );
     return el;
+
 }
 
 ViewAssembler.prototype.searchResultsView = function( marketsArr, criteria ) {
     var viewModel = {markets:[]};
-    for ( var i=0; i< marketsArr.length; i++ ) {
+    for ( var i=0; i< marketsArr.length+1; i++ ) {
         var market = arrayToMarketObject( marketsArr[i] );
         viewModel.markets.push( market );
     }
@@ -185,17 +186,17 @@ ViewAssembler.prototype.mapView = function(centerLatLng) {
 
     var blueMarkerIcon = L.Icon.extend({
         iconUrl: 'assets/map/marker-lightblue.png',
-        shadowUrl: 'assets/map/shadow.png',
+        shadowUrl: 'assets/map/shadow-glass.png',
         iconSize: new L.Point(26, 40),
-        shadowSize: new L.Point(32, 39),
+        shadowSize: new L.Point(35, 40),
         iconAnchor: new L.Point(14, 39),
         popupAnchor: new L.Point(0, -35)
     });
     var yellowMarkerIcon = L.Icon.extend({
-        iconUrl: 'assets/map/marker-yellow.png',
-        shadowUrl: 'assets/map/shadow.png',
+        iconUrl: 'assets/map/marker-wine-red.png',
+        shadowUrl: 'assets/map/shadow-glass.png',
         iconSize: new L.Point(26, 40),
-        shadowSize: new L.Point(32, 39),
+        shadowSize: new L.Point(35, 40),
         iconAnchor: new L.Point(14, 40),
         popupAnchor: new L.Point(13, 12)
     });
@@ -243,14 +244,14 @@ ViewAssembler.prototype.mapView = function(centerLatLng) {
     }
     
     var onLocationFound = function (e) {
-    		var radius = e.accuracy / 2;
+    		var radius = e.accuracy / 10;
 
 			var marker = new L.Marker(e.latlng, {icon: blueIcon});
 			markersLayer.addLayer(marker);
 			marker.bindPopup("Vous êtes à " + radius + " metres de ce point");
 
-			var circle = new L.Circle(e.latlng, radius);
-			markersLayer.addLayer(circle);
+			//var circle = new L.Circle(e.latlng, radius);
+			//markersLayer.addLayer(circle);
 		}
 		
 		var onLocationError = function (e) {
@@ -324,17 +325,17 @@ ViewAssembler.prototype.marketMapView = function(market) {
 
     var blueMarkerIcon = L.Icon.extend({
         iconUrl: 'assets/map/marker-lightblue.png',
-        shadowUrl: 'assets/map/shadow.png',
+        shadowUrl: 'assets/map/shadow-glass.png',
         iconSize: new L.Point(26, 40),
-        shadowSize: new L.Point(32, 39),
+        shadowSize: new L.Point(35, 40),
         iconAnchor: new L.Point(14, 39),
         popupAnchor: new L.Point(0, -35)
     });
     var yellowMarkerIcon = L.Icon.extend({
-        iconUrl: 'assets/map/marker-yellow.png',
-        shadowUrl: 'assets/map/shadow.png',
+        iconUrl: 'assets/map/marker-wine-red.png',
+        shadowUrl: 'assets/map/shadow-glass.png',
         iconSize: new L.Point(26, 40),
-        shadowSize: new L.Point(32, 39),
+        shadowSize: new L.Point(35, 40),
         iconAnchor: new L.Point(14, 40),
         popupAnchor: new L.Point(13, 12)
     });
@@ -362,8 +363,8 @@ ViewAssembler.prototype.marketMapView = function(market) {
 			markersLayer.addLayer(marker);
 			marker.bindPopup("Vous êtes à " + radius + "metres de ce point");
 
-			var circle = new L.Circle(e.latlng, radius);
-			markersLayer.addLayer(circle);
+			//var circle = new L.Circle(e.latlng, radius);
+			//markersLayer.addLayer(circle);
 		}
 		
 		var onLocationError = function (e) {
