@@ -1,0 +1,14 @@
+
+<div id="marketsNearMeView">
+    <div class="padded heading">
+        Vignerons à moins de 15km: 
+        <a id="mapButton" class="button right">VOIR LA CARTE</a>
+    </div>
+    <div class="data-list">
+        <ul>
+            {{#markets}}
+            <li index="{{index}}"><strong>{{marketName}}</strong><div class="subtext">{{distance}} Km</div></li>
+            {{/markets}}
+        </ul>
+    </div>
+</div>

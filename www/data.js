@@ -1,0 +1,4 @@
+var markets =  [["1005876","Badan freres vins","","Avenue du Cloître 9","Aigle","Vaud","","1860","6.972521","46.316907","Visite gratuite","Y","N","N","N","N","Y","Y","N","Y","N","Y","Y","Y","Y","Y","N","Y","N","Y","Y","Y"],
+["1003548","Badoux Vins","http://badoux-vins.ch/fr/","Route d'Ollon 8","Aigle","Vaud","","1860","6.965811","46.313606","Visite à partir de 10 personnes, payante","Y","N","N","N","N","Y","Y","Y","Y","N","Y","Y","Y","Y","Y","Y","N","N","Y","N","Y"],
+["2001141","Stéphane Borter","","chemin de Fontanney 13","Aigle","Vaud","","64153","6.985205","46.318489","","N","N","N","N","N","N","N","N","N","N","N","N","N","N","N","N","N","N","N","N","N"],
+["2000038","Cave Borloz","","Chemin des noyers 13","Aigle","Vaud","","57718","6.971043","46.31996","","N","N","N","N","N","N","N","N","N","N","N","N","N","N","N","N","N","N","N","N","N"]];
