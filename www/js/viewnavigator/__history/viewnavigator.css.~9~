@@ -15,6 +15,7 @@ ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 	width:100%;
 	height:100%;
 	background-color:#8C001A;
+	color: white;
 	overflow:hidden;
 }
 
@@ -44,7 +45,7 @@ ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 .viewNavigator_header_title {
 
 	position:absolute;
-	top:2px;
+	top:12px;
 	left:0%;
 	right:0%;
 	margin-left:auto;

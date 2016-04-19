@@ -15,6 +15,7 @@ ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 	width:100%;
 	height:100%;
 	background-color:#8C001A;
+	color: white;
 	overflow:hidden;
 }
 
@@ -44,7 +45,7 @@ ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 .viewNavigator_header_title {
 
 	position:absolute;
-	top:2px;
+	top:12px;
 	left:0%;
 	right:0%;
 	margin-left:auto;
@@ -138,7 +139,7 @@ ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 	cursor:pointer;
 	display: inline-block;
 	white-space: nowrap;
-	background-color: transparent;
+	background-color: #ccc;
 	border-radius: .2em;
 	padding: 4px 10px;
 	box-shadow: 0 0 1px 1px rgba(255,255,255,.8) inset, 0 1px 0 rgba(0,0,0,.3);
@@ -146,5 +147,5 @@ ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 .viewNavigator_backButton:active
 {
-	background-color: transparent;
+	background-color: #ddd;
 }

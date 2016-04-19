@@ -86,14 +86,14 @@ body {
 .listSelected {
 	color:#333;
 	border-top:1px solid #094C99;
-	background-color: #D9D900;
+	background-color: #8e44ad;
 }
 
 
 /*ViewNavigator Styles*/
 
 .viewNavigator_header {
-    background:#444;
+    background:#8C001A;
     color:#444;
 }
 
@@ -111,8 +111,8 @@ body {
     color: rgba(0,0,0,0);
     height:35px;
     box-shadow: 0 0 0 0;
-    background: #DEDEDE;
-    border:1px solid #999;
+    background:transparent;
+    border:1px solid #FFF;
     padding:0px;
     border-radius:0px;
     background-image:url('graphics/back_arrow.png');
@@ -133,7 +133,7 @@ body {
 }
 
 .viewNavigator_backButton:active {
-    background-color: #D9D900;
+    background-color: #8e44ad;
 }
 
 .viewNavigator_content {
@@ -152,7 +152,7 @@ body {
 .viewNavigator_contentHolder > div:first-child {
     min-height:100%;
     background:#EDEDED;
-    /*background-image:url('graphics/wheat_bg.png');
+    /*background-image:url('graphics/Wine_Corks2.png');
     background-position: top left;
     background-repeat:repeat;*/
     border-bottom:1px solid #444;
@@ -182,7 +182,7 @@ body {
 }
 
 .button:active {
-    background-color: #D9D900;
+    background-color: #8e44ad;
 }
 
 .heading {
@@ -201,7 +201,7 @@ body {
 }
 
 #defaultView {
-    background-image:url('graphics/Wine_Corks.png');
+    background-image:url('graphics/Wine_Corks2.png');
     background-position: bottom center;
     background-repeat:no-repeat;
 }
@@ -210,7 +210,7 @@ body {
 
 @media only screen and (min-width:760px) {
     #defaultView {
-        background-image:url('graphics/Wine_Corks.png');
+        background-image:url('graphics/Wine_Corks2.png');
     }
 }
 
@@ -239,12 +239,12 @@ body {
 }
 
 #defaultView a:active {
-    background-color:#D9D900;
+    background-color:#8e44ad;
 }
 
 #defaultView #nearMe {
     padding-left:75px;
-    background-image:url('graphics/map_marker.png');
+    background-image:url('graphics/wine-glasse.png');
     background-position: 15px center;
     background-repeat:no-repeat;
 }
@@ -343,87 +343,87 @@ body {
 
 #snap {
     background-image:url('graphics/snap.png');
-    background-position: 20px center;
+    background-position: 15px center;
 }
 
 #bakedgoods {
-    background-image:url('graphics/bread.png');
-    background-position: 10px center;
+    background-image:url('graphics/ico-wine-glasses-white.png');
+    background-position: 15px center;
 }
 
 #cheese {
-    background-image:url('graphics/cheese.png');
-    background-position: 7px center;
+    background-image:url('graphics/ico-wine-glasses-white.png');
+    background-position: 15px center;
 }
 
 #arts {
-    background-image:url('graphics/arts.png');
-    background-position: 12px center;
+    background-image:url('graphics/ico-wine-glasses-white.png');
+    background-position: 15px center;
 }
 
 #flowers {
-    background-image:url('graphics/flower.png');
+    background-image:url('graphics/ico-wine-glasses-white.png');
     background-position: 15px center;
 }
 
 #seafood {
-    background-image:url('graphics/fish.png');
-    background-position: 7px center;
+    background-image:url('graphics/ico-wine-glasses-white.png');
+    background-position: 15px center;
 }
 
 #fruit {
-    background-image:url('graphics/fruit.png');
+    background-image:url('graphics/ico-wine-glasses-white.png');
     background-position: 15px center;
 }
 
 #herbs {
-    background-image:url('graphics/herb.png');
+    background-image:url('graphics/ico-wine-glasses-white.png');
     background-position: 15px center;
 }
 
 #vegetables {
-    background-image:url('graphics/vegetables.png');
-    background-position: 16px center;
+    background-image:url('graphics/ico-wine-glasse.png');
+    background-position: 15px center;
 }
 
 #honey {
-    background-image:url('graphics/honey.png');
-    background-position: 17px center;
+    background-image:url('graphics/ico-wine-glasse.png');
+    background-position: 15px center;
 }
 
 #jams {
-    background-image:url('graphics/jams.png');
-    background-position: 17px center;
+    background-image:url('graphics/ico-wine-glasse.png');
+    background-position: 15px center;
 }
 
 #maple {
-    background-image:url('graphics/maple.png');
-    background-position: 17px center;
+    background-image:url('graphics/ico-wine-glasse.png');
+    background-position: 15px center;
 }
 
 #nuts {
-    background-image:url('graphics/nuts.png');
+    background-image:url('graphics/ico-wine-glasse.png');
     background-position: 15px center;
 }
 
 #meat {
-    background-image:url('graphics/meat.png');
-    background-position: 10px center;
+    background-image:url('graphics/ico-wine-glasse.png');
+    background-position: 15px center;
 }
 
 #plants {
-    background-image:url('graphics/plants.png');
-    background-position: 18px center;
+    background-image:url('graphics/ico-wine-glasse.png');
+    background-position: 15px center;
 }
 
 #prepared {
-    background-image:url('graphics/prepared.png');
+    background-image:url('graphics/ico-wine-glasse.png');
     background-position: 15px center;
 }
 
 #soap {
-    background-image:url('graphics/soap.png');
-    background-position: 10px center;
+    background-image:url('graphics/ico-wine-glasse.png');
+    background-position: 15px center;
 }
 
 
@@ -453,7 +453,7 @@ body {
 	z-index:99;
 }
 
-#search_state {
+#search_county {
     font-size:1.25em;
     width:100%;
 }

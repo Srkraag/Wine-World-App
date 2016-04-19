@@ -111,8 +111,8 @@ body {
     color: rgba(0,0,0,0);
     height:35px;
     box-shadow: 0 0 0 0;
-    background:transparent;
-    border:1px solid #FFF;
+    background: #DEDEDE;
+    border:1px solid #999;
     padding:0px;
     border-radius:0px;
     background-image:url('graphics/back_arrow.png');
@@ -137,7 +137,7 @@ body {
 }
 
 .viewNavigator_content {
-   /* border-top:1px solid #999;*/
+    border-top:1px solid #999;
     background:#999;
     color:#444;
 }
@@ -145,8 +145,8 @@ body {
 .viewNavigator_contentHolder {
     color:#444;
     background:#999;
-   /* border-left:1px solid #999;
-    border-right:1px solid #999;*/
+    border-left:1px solid #999;
+    border-right:1px solid #999;
 }
 
 .viewNavigator_contentHolder > div:first-child {
