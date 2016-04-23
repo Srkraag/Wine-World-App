@@ -1,0 +1,24 @@
+<div id="searchResultsView" class="data-list" >
+    <div class="padded heading">
+        <a id="mapButton" class="button right">CARTE</a>
+        Résultats pour le canton : {{criteria}}  .
+    </div>
+    
+    {{#overLength}}
+    <div class="padded warning">Seulement les 50 premiers résultats sont affichés !</div>
+    {{/overLength}}
+    
+    <ul>
+        {{#markets}}
+        <li index="{{index}}">
+            <strong>{{marketName}}</strong><br/>
+            {{#street}}
+            {{street}}<br/>
+            {{/street}}
+            {{city}}, {{state}}, {{zip}}
+        </li>
+        {{/markets}}
+    </ul>
+    
+    
+</div>
