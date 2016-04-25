@@ -168,7 +168,7 @@ function filterMarketsByGeo( latitude, longitude ) {
         var lon2 = parseFloat(longitude);
         //console.log( lat1, lon1, lat2, lon2 );
         var d = distance( lat1, lon1, lat2, lon2 );
-        if ( d < 15 ){
+        if ( d < 05 ){
             result.push( markets[i] );
         }
         
